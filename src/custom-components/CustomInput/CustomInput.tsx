@@ -12,20 +12,67 @@ import { useShowPassword } from '../../hooks/useShowPassword';
 import EndAdornment from '../EndAdornment/EndAdornment';
 
 type Props = {
+  /**
+   * The label for the input
+   */
   label: string;
+  /**
+   * The help text for the input
+   */
   helpText: string;
+  /**
+   * The type of the input (text, password or email)
+   */
   type: 'text' | 'password' | 'email';
+  /**
+   * The variant of the input (standard, outlined or filled)
+   */
   variant?: 'standard' | 'outlined' | 'filled';
+  /**
+   * The value of the input
+   */
   value: string;
+  /**
+   * The placeholder for the input
+   */
   placeholder: string;
+  /**
+   * The styles for the input
+   */
   sx?: SxProps;
+  /**
+   * Whether to show the check icon or not
+   */
   shouldShowCheckIcon?: boolean;
+  /**
+   * The error message for the input
+   */
   error?: string;
+  /**
+   * Whether the input has been touched or not
+   */
   touched?: boolean;
+  /**
+   * Whether the input is required or not
+   */
+  required?: boolean;
+  /**
+   * Whether the input is disabled or not
+   */
+  disabled?: boolean;
+  /**
+   * The onBlur handler for the input
+   */
   onBlur?: () => void;
+  /**
+   * The onChange handler for the input
+   */
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
+/**
+ * Primary UI component for user interaction
+ */
 const CustomInput = ({
   label,
   helpText,
@@ -37,6 +84,8 @@ const CustomInput = ({
   shouldShowCheckIcon,
   error,
   touched,
+  required,
+  disabled,
   onChange,
   onBlur
 }: Props) => {
@@ -72,6 +121,8 @@ const CustomInput = ({
           placeholder={placeholder}
           value={value}
           endAdornment={endAdornment}
+          required={!!required}
+          disabled={!!disabled}
           onChange={onChange}
           onBlur={onBlur}
         />
@@ -93,6 +144,8 @@ const CustomInput = ({
           value={value}
           label={label}
           endAdornment={endAdornment}
+          required={!!required}
+          disabled={!!disabled}
           onChange={onChange}
           onBlur={onBlur}
         />
@@ -114,6 +167,8 @@ const CustomInput = ({
           placeholder={placeholder}
           value={value}
           endAdornment={endAdornment}
+          required={!!required}
+          disabled={!!disabled}
           onChange={onChange}
           onBlur={onBlur}
         />
