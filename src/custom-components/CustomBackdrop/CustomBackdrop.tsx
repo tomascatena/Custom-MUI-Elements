@@ -1,7 +1,7 @@
 import { StyledBackdrop } from './CustomBackdrop.styled';
 import { Typography } from '@mui/material';
 import CircularLoader from '../CircularLoader/CircularLoader';
-import React, { FC } from 'react';
+import React from 'react';
 
 type Props = {
   /**
