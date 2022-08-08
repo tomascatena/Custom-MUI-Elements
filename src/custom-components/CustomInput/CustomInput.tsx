@@ -179,4 +179,9 @@ const CustomInput = ({
   }
 };
 
-export default CustomInput;
+const areEqualProps = (prevProps: Props, nextProps: Props): boolean => {
+  return prevProps.value === nextProps.value &&
+    prevProps.disabled === nextProps.disabled;
+};
+
+export default React.memo(CustomInput, areEqualProps);
