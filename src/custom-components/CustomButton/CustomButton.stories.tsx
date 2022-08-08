@@ -17,6 +17,7 @@ Default.args = {
   disabled: false,
   type: 'submit',
   text: 'Save',
+  loadingText: 'Saving...',
   startIcon: <SaveIcon />,
 };
 

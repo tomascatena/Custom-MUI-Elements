@@ -29,13 +29,13 @@ type Props = {
 /**
  * A custom backdrop component
  */
-const CustomBackdrop: FC<Props> = ({
+const CustomBackdrop = ({
   isOpen,
   message = 'Loading... Please wait.',
   loaderSize = 100,
   loaderThickness = 4,
   textVariant = 'h4'
-}) => {
+}: Props) => {
   return (
     <StyledBackdrop open={isOpen}>
       <CircularLoader
