@@ -1,5 +1,8 @@
 {
   "version": "0.1.0",
+  "name": "custom-mui-components",
+  "author": "Tomás Catena",
+  "module": "dist/custom-mui-components.esm.js",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,32 +27,11 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "custom-mui-components",
-  "author": "Tomás Catena",
-  "module": "dist/custom-mui-components.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/custom-mui-components.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/custom-mui-components.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@emotion/react": "^11.10.0",
+    "@mui/lab": "^5.0.0-alpha.93",
+    "@mui/x-date-pickers": "^5.0.0-beta.4",
     "@size-limit/preset-small-lib": "^8.0.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -71,9 +53,23 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/custom-mui-components.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/custom-mui-components.esm.js",
+      "limit": "10 KB"
+    }
+  ]
 }

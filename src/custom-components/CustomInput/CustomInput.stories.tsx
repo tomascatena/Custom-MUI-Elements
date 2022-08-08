@@ -1,10 +1,9 @@
 import React from 'react';
 import CustomInput from './CustomInput';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Box } from '@mui/material';
 
 export default {
-  title: 'Example/CustomInput',
+  title: 'UI/CustomInput',
   component: CustomInput,
   argTypes: {},
 } as ComponentMeta<typeof CustomInput>;
@@ -13,18 +12,11 @@ const Template: ComponentStory<typeof CustomInput> = (args) => {
   const [value, setValue] = React.useState('John Doe');
 
   return (
-    <Box sx={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      gap: '2rem',
-    }}>
-      <CustomInput
-        {...args}
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </Box>
+    <CustomInput
+      {...args}
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
