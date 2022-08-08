@@ -1,8 +1,8 @@
-import React from 'react';
+import { Box, ThemeProvider } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
+import React from 'react';
 import darkTheme from '../src/themes/darkTheme';
 import lightTheme from '../src/themes/lightTheme';
-import { Box, ThemeProvider } from '@mui/material';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -53,10 +53,12 @@ const withMUIThemeProvider = (Story, context) => {
       <CssBaseline />
 
       <ThemeProvider theme={theme}>
-        <Box sx={{
-          backgroundColor: theme.palette.background.default,
-          padding: 3,
-        }}>
+        <Box
+          sx={{
+            backgroundColor: theme.palette.background.default,
+            padding: 3,
+          }}
+        >
           <Story {...context} />
         </Box>
       </ThemeProvider>

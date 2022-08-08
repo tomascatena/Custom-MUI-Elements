@@ -1,11 +1,11 @@
-import React from 'react';
+import {
+  IconButton,
+  InputAdornment
+} from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
+import React from 'react';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import {
-  InputAdornment,
-  IconButton
-} from '@mui/material';
 
 interface Props {
   shouldShowCheckIcon?: boolean;

@@ -1,6 +1,6 @@
-import React from 'react';
-import CustomInput from './CustomInput';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import CustomInput from './CustomInput';
+import React from 'react';
 
 export default {
   title: 'UI/CustomInput',
