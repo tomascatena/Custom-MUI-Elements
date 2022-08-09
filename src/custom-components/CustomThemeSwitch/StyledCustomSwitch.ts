@@ -1,14 +1,12 @@
 import { styled } from '@mui/system';
 import Switch from '@mui/material/Switch';
 
-type HexColor = `#${string}`;
-
 type StyledCustomSwitchProps = {
-  darkThemeTrackBackgroundColor: HexColor;
-  lightThemeTrackBackgroundColor: HexColor;
-  darkThemeSwitchThumbColor: HexColor;
-  lightThemeSwitchThumbColor: HexColor;
-  textColor: HexColor;
+  darkThemeTrackBackgroundColor: string;
+  lightThemeTrackBackgroundColor: string;
+  darkThemeSwitchThumbColor: string;
+  lightThemeSwitchThumbColor: string;
+  textColor: string;
 };
 
 const StyledCustomSwitch = styled(Switch, {

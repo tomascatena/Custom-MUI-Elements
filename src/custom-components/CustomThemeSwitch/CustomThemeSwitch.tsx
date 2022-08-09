@@ -1,14 +1,12 @@
 import React from 'react';
 import StyledCustomSwitch from './StyledCustomSwitch';
 
-type HexColor = `#${string}`;
-
 type Props = {
-  darkThemeTrackBackgroundColor?: HexColor;
-  lightThemeTrackBackgroundColor?: HexColor;
-  darkThemeSwitchThumbColor?: HexColor;
-  lightThemeSwitchThumbColor?: HexColor;
-  textColor?: HexColor;
+  darkThemeTrackBackgroundColor?: string;
+  lightThemeTrackBackgroundColor?: string;
+  darkThemeSwitchThumbColor?: string;
+  lightThemeSwitchThumbColor?: string;
+  textColor?: string;
 };
 
 const CustomThemeSwitch = ({

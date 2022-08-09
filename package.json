@@ -17,7 +17,9 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx'",
+    "lint:fix": "eslint 'src/**/*.ts' 'src/**/*.tsx' --fix",
+    "lint:quiet": "eslint 'src/**/*.ts' 'src/**/*.tsx' --quiet",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -69,7 +71,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "npm run lint"
     }
   },
   "size-limit": [
