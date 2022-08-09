@@ -9,15 +9,15 @@ type StyledCustomSwitchProps = {
   darkThemeSwitchThumbColor: HexColor;
   lightThemeSwitchThumbColor: HexColor;
   textColor: HexColor;
-}
+};
 
 const StyledCustomSwitch = styled(Switch, {
   shouldForwardProp: (props) => {
     return props !== 'darkThemeTrackBackgroundColor' &&
-     props !== 'lightThemeTrackBackgroundColor' &&
-     props !== 'darkThemeSwitchThumbColor' &&
-     props !== 'lightThemeSwitchThumbColor' &&
-     props !== 'textColor';
+      props !== 'lightThemeTrackBackgroundColor' &&
+      props !== 'darkThemeSwitchThumbColor' &&
+      props !== 'lightThemeSwitchThumbColor' &&
+      props !== 'textColor';
   },
 })<StyledCustomSwitchProps>(({
   theme,

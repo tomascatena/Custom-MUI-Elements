@@ -1,13 +1,13 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import CustomSwitch from './StyledCustomSwitch';
+import CustomThemeSwitch from './CustomThemeSwitch';
 import React from 'react';
 
 export default {
-  title: 'UI/CustomSwitch',
-  component: CustomSwitch,
-} as ComponentMeta<typeof CustomSwitch>;
+  title: 'UI/CustomThemeSwitch',
+  component: CustomThemeSwitch,
+} as ComponentMeta<typeof CustomThemeSwitch>;
 
-const Template: ComponentStory<typeof CustomSwitch> = (args) => <CustomSwitch {...args} />;
+const Template: ComponentStory<typeof CustomThemeSwitch> = (args) => <CustomThemeSwitch {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

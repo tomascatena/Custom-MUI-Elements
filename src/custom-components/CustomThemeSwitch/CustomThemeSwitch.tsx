@@ -11,7 +11,7 @@ type Props = {
   textColor?: HexColor;
 };
 
-const CustomSwitch = ({
+const CustomThemeSwitch = ({
   darkThemeTrackBackgroundColor = '#8796A5',
   lightThemeTrackBackgroundColor = '#aab4be',
   darkThemeSwitchThumbColor = '#003892',
@@ -29,4 +29,4 @@ const CustomSwitch = ({
   );
 };
 
-export default CustomSwitch;
+export default CustomThemeSwitch;
